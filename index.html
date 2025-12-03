@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brand Name - Navigation</title>
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Brand Logo and Name -->
+            <div class="brand-section">
+                <a href="#" class="brand-link">
+                    <div class="logo-placeholder">
+                        <!-- This is where your logo will go -->
+                        <i class="fas fa-rocket logo-icon"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">TechInnovate</span>
+                        <span class="brand-tagline">Digital Solutions</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Menu -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-images"></i> Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-users"></i> About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-newspaper"></i> Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side Actions -->
+            <div class="nav-actions">
+                <!-- Support/Contact Info -->
+                <div class="contact-info">
+                    <a href="tel:+1234567890" class="contact-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="contact-text">+1 (234) 567-890</span>
+                    </a>
+                    <a href="mailto:contact@yourbrand.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-text">contact@techinnovate.com</span>
+                    </a>
+                </div>
+
+                <!-- Dropdown Menu Trigger -->
+                <div class="dropdown-container">
+                    <button class="dropdown-trigger" id="dropdownBtn" aria-label="More options" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                        <span class="trigger-text">More</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-header">
+                            <i class="fas fa-cog"></i>
+                            <span>Quick Actions</span>
+                        </div>
+                        
+                        <div class="dropdown-section">
+                            <h4 class="section-title">Resources</h4>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file-download"></i>
+                                <span>Download Brochure</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-book"></i>
+                                <span>Documentation</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-video"></i>
+                                <span>Video Tutorials</span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-section">
+                            <h4 class="section-title">Support</h4>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Live Chat</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Contact Support</span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-section">
+                            <h4 class="section-title">Account</h4>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-footer">
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="theme-toggle">
+                                <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Dark Mode</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden on desktop) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-header">
+                <h3>Menu</h3>
+                <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-links">
+                <a href="#" class="mobile-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="mobile-link"><i class="fas fa-briefcase"></i> Services</a>
+                <a href="#" class="mobile-link"><i class="fas fa-images"></i> Portfolio</a>
+                <a href="#" class="mobile-link"><i class="fas fa-users"></i> About</a>
+                <a href="#" class="mobile-link"><i class="fas fa-newspaper"></i> Blog</a>
+                
+                <div class="mobile-divider"></div>
+                
+                <a href="tel:+1234567890" class="mobile-link"><i class="fas fa-phone-alt"></i> Call Us</a>
+                <a href="mailto:contact@techinnovate.com" class="mobile-link"><i class="fas fa-envelope"></i> Email Us</a>
+                <a href="#" class="mobile-link"><i class="fas fa-map-marker-alt"></i> Visit Us</a>
+                
+                <div class="mobile-divider"></div>
+                
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileDropdownBtn">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span>More Options</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileDropdownContent">
+                        <a href="#" class="mobile-dropdown-item"><i class="fas fa-file-download"></i> Downloads</a>
+                        <a href="#" class="mobile-dropdown-item"><i class="fas fa-question-circle"></i> Support</a>
+                        <a href="#" class="mobile-dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-footer">
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">© 2024 TechInnovate. All rights reserved.</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content for Demo -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Welcome to TechInnovate</h1>
+            <p class="subtitle">Responsive Navigation Bar Demo</p>
+            
+            <div class="demo-content">
+                <div class="demo-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Fully Responsive</h3>
+                    <p>Try resizing your browser window or viewing on different devices to see the responsive behavior.</p>
+                </div>
+                
+                <div class="demo-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Interactive Elements</h3>
+                    <p>Hover over menu items, click the dropdown, and try the mobile menu for interactive features.</p>
+                </div>
+                
+                <div class="demo-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Customizable</h3>
+                    <p>Easily replace the placeholder logo and colors to match your brand identity.</p>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h2>How to Use This Navbar</h2>
+                <ol>
+                    <li>Replace "TechInnovate" with your brand name</li>
+                    <li>Add your logo in the logo-placeholder div</li>
+                    <li>Update contact information</li>
+                    <li>Customize dropdown menu items</li>
+                    <li>Modify colors in the CSS to match your brand</li>
+                </ol>
+                
+                <div class="code-instruction">
+                    <h3>To Add Your Logo:</h3>
+                    <p>Replace the logo-placeholder div with your logo image:</p>
+                    <code>
+                        &lt;img src="your-logo.png" alt="Your Brand" class="brand-logo"&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+
+
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Modern<span>Web</span></a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Building Modern Digital Experiences</h1>
+                    <p>We create responsive, user-friendly websites with cutting-edge design and functionality for businesses of all sizes.</p>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Modern web development">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services & Features</h2>
+                    <p>We offer a comprehensive range of digital services to help your business grow online.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom, responsive websites built with the latest technologies for optimal performance across all devices.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and cross-platform mobile applications designed to provide seamless user experiences on iOS and Android.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design solutions that enhance engagement and drive conversions through intuitive interfaces.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your website's visibility with our comprehensive search engine optimization strategies and techniques.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Solutions</h3>
+                        <p>Full-featured online stores with secure payment gateways, inventory management, and customer analytics.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>Data-driven marketing campaigns that increase brand awareness, generate leads, and boost sales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Contact us for a free consultation and quote. We'll respond within 24 hours.</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Web Street, Digital City, DC 10001</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@modernweb.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        
+                        <div class="contact-social">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Modern<span>Web</span></h3>
+                    <p>Creating digital experiences that drive business growth and customer engagement through innovative web solutions.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Street, Digital City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@modernweb.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ModernWeb. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="navbar.js"></script>
+</body>
+</html>
